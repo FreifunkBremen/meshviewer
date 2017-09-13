@@ -25,6 +25,7 @@
     "firstSeen": "First seen",
     "systemLoad": "Load average",
     "ram": "Memory usage",
+    "airtime": "Airtime",
     "ipAddresses": "IP addresses",
     "selectedGateway": "Selected gateway",
     "link": "Link |||| Links",

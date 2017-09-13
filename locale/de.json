@@ -25,6 +25,7 @@
     "firstSeen": "Erstmals gesehen",
     "systemLoad": "Load average",
     "ram": "Speicherauslastung",
+    "airtime": "Airtime",
     "ipAddresses": "IP Adressen",
     "selectedGateway": "Gewähltes Gateway",
     "link": "Verbindung |||| Verbindungen",

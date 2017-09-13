@@ -25,6 +25,7 @@
     "firstSeen": "Vu pour la première fois",
     "systemLoad": "Charge moyenne",
     "ram": "Utilisation de la mémoire",
+    "airtime": "Airtime",
     "ipAddresses": "Adresse IP",
     "selectedGateway": "Passerelle sélectionné",
     "link": "Connexion |||| Connexions",
