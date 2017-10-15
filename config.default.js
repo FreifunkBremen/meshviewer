@@ -49,6 +49,10 @@ module.exports = function () {
         'value': 'model'
       },
       {
+        'name': 'node.id',
+        'value': 'node_id'
+      },
+      {
         'name': 'node.primaryMac',
         'value': 'mac'
       },
@@ -63,14 +67,6 @@ module.exports = function () {
       {
         'name': 'node.firstSeen',
         'value': 'FirstSeen'
-      },
-      {
-        'name': 'node.systemLoad',
-        'value': 'Load'
-      },
-      {
-        'name': 'node.ram',
-        'value': 'RAM'
       },
       {
         'name': 'node.ipAddresses',
