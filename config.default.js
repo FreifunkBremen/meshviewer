@@ -20,31 +20,13 @@ module.exports = function () {
         'name': 'node.coordinates',
         'value': 'GeoURI'
       },
-      //    {
-      //      "name": "node.contact",
-      //      "value": "owner"
-      //    },
-
-      // Examples for functions
-      // {
-      //   // no name will remove first column
-      //   'value': function (d) {
-      //     var moment = require('moment');
-      //     var V = require('snabbdom').default;
-      //     return V.h('td', { props: { colSpan: 2 }, style: { background: '#49a' } },
-      //       _.t('sidebar.nodeOnline') + ' translate, ' + moment(d.firstseen).get('month') +
-      //       ' Month require libs like moment, access config ' + config.siteName);
-      //   }
-      // },
-      // {
-      //   'name': 'Neighbour first seen',
-      //   'value': function (d, nodeDict) {
-      //     return nodeDict[d.gateway_nexthop].firstseen.format() + 'access node object';
-      //   }
-      // },
       {
         'name': 'node.hardware',
         'value': 'model'
+      },
+      {
+        'name': 'node.id',
+        'value': 'node_id'
       },
       {
         'name': 'node.primaryMac',
@@ -61,14 +43,6 @@ module.exports = function () {
       {
         'name': 'node.firstSeen',
         'value': 'FirstSeen'
-      },
-      {
-        'name': 'node.systemLoad',
-        'value': 'Load'
-      },
-      {
-        'name': 'node.ram',
-        'value': 'RAM'
       },
       {
         'name': 'node.ipAddresses',
