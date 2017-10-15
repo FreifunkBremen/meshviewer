@@ -2,3 +2,35 @@
 //$color-black: #fff;
 //$color-white: invert($color-white);
 //$color-primary: invert($color-primary);
+
+$freifunk-gelb: #ffb400;
+$freifunk-magenta: #dc0067;
+$freifunk-blau: #009ee0;
+
+$dark-background: #373636;
+
+$menu-background-active: #fff;
+$menu-textcolor-active: #000;
+
+$menu-background-1: $dark-background;
+$menu-textcolor-1: $color-white;
+
+$menu-background-2: $freifunk-gelb;
+$menu-textcolor-2: #000;
+
+$menu-background-3: $freifunk-magenta;
+$menu-textcolor-3: $color-white;
+
+$menu-background-4: #ccc;
+$menu-textcolor-4: #000;
+
+$menu-background-5: $freifunk-blau;
+$menu-textcolor-5: $color-white;
+
+
+$color-black: $dark-background;
+$color-primary: $freifunk-magenta;
+$font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-secondary: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$shadows: 0;
+$use-included-font: 0;
