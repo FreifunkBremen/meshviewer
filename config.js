@@ -64,8 +64,8 @@ module.exports = function () {
       }
     ],
     // Array of data provider are supported
-    'dataPath': ['https://downloads.bremen.freifunk.net/data/'],
-    'siteName': 'Freifunk Bremen',
+    'dataPath': ['/data/'],
+    'siteName': 'Freifunk Bremen - Local',
     'maxAge': 7,
     'mapLayers': [
       {
