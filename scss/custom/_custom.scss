@@ -8,3 +8,165 @@
 
 // SCSS supports css with a lot of additional features like variables or mixins.
 // Autoprefixer runs in postcss, no need to add browser-prefixes like -webkit, -moz or -ms
+a {
+  color: $freifunk-magenta;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h2 {
+  margin: inherit auto;
+  max-width: 100%;
+  text-align: center;
+  width: max-content;
+
+  &::after {
+    background-color: $freifunk-magenta;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 5px auto;
+    min-width: 80%;
+    width: calc(100% - 2em);
+  }
+}
+
+%button {
+  background-color: $freifunk-magenta;
+  color: $color-white;
+  opacity: 1;
+  text-decoration: none;
+
+  &.active,
+  &:hover {
+    color: $color-white;
+  }
+}
+
+button {
+  @extend %button;
+}
+
+.leaflet-control-zoom {
+  opacity: 1;
+
+  a {
+    @extend %button;
+  }
+
+}
+
+.leaflet-control-layers {
+  &.leaflet-control {
+    opacity: 1;
+  }
+}
+
+.leaflet-container {
+  .leaflet-control-layers-toggle {
+    @extend %button;
+  }
+}
+
+.infobox {
+  .clients {
+    color: $freifunk-magenta;
+  }
+}
+
+ion-location {
+  color: $freifunk-magenta;
+}
+
+.leaflet-label {
+  &.leaflet-label-right {
+    background-color: $color-white;
+    border: 2px solid $freifunk-magenta;
+    border-radius: 0;
+    font-weight: normal;
+    opacity: .8;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+header {
+  background-blend-mode: soft-light;
+  background-color: $dark-background;
+  background-image: url('https://bremen.freifunk.net/images/logo/skyline.svg'); // sass-lint:disable-line no-url-domains,no-url-protocols
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  border-bottom: 0;
+  color: $color-white;
+
+  h2 {
+
+    &::after {
+      height: 0;
+      margin: 0;
+      width: 0;
+    }
+  }
+}
+
+.language-switch {
+  color: $color-white;
+
+  option {
+    background: $dark-background;
+  }
+}
+
+.filter-node {
+  input {
+    color: $color-white;
+  }
+}
+
+.tabs {
+  border: 0;
+
+  li {
+    &:nth-child(1) {
+      background-color: $menu-background-1;
+      color: $menu-textcolor-1;
+    }
+
+    &:nth-child(2) {
+      background-color: $menu-background-2;
+      color: $menu-textcolor-2;
+    }
+
+    &:nth-child(3) {
+      background-color: $menu-background-3;
+      color: $menu-textcolor-3;
+    }
+
+    &:nth-child(4) {
+      background-color: $menu-background-4;
+      color: $menu-textcolor-4;
+    }
+
+    &:nth-child(5) {
+      background-color: $menu-background-5;
+      color: $menu-textcolor-5;
+    }
+
+    &.visible {
+      background-color: $menu-background-active;
+      border: 0;
+      color: $menu-textcolor-active;
+      font-weight: bold;
+    }
+
+    &:hover {
+      background-color: $menu-background-active;
+      color: $menu-textcolor-active;
+    }
+  }
+}
