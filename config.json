@@ -1,9 +1,9 @@
 {
-  "dataPath": "https://map.luebeck.freifunk.net/data/",
-  "siteName": "Freifunk Lübeck",
+  "dataPath": "https://downloads.bremen.freifunk.net/data/v1/",
+  "siteName": "Freifunk Bremen",
   "mapSigmaScale": 0.5,
-  "showContact": true,
-  "maxAge": 14,
+  "showContact": false,
+  "maxAge": 7,
   "mapLayers": [
     { "name": "MapQuest",
       "url": "https://otile{s}-s.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.jpg",
