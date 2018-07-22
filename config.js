@@ -57,15 +57,15 @@ module.exports = function () {
     ],
     'globalInfos': [
       {
-        'name': 'Wochenstatistik',
-        'href': 'https://grafana.bremen.freifunk.net/d/000000001/globals',
-        'image': 'https://grafana.bremen.freifunk.net/render/d-solo/000000001/globals?orgId=1&panelId=2&from=now-7d&width=650&height=350&theme=light',
-        'title': 'Entwicklung der Anzahl der Knoten und der Clients innerhalb der letzten 7 Tage'
+        'name': 'Gesamtstatistik',
+        'href': 'https://grafana.bremen.freifunk.net/d/g0BEaZ4Zk/breminale-2019-nodes',
+        'image': 'https://grafana.bremen.freifunk.net/render/d-solo/g0BEaZ4Zk/breminale-2019-nodes?panelId=2&from=now-7d&width=650&height=350&theme=light',
+        'title': 'Entwicklung der Anzahl der Knoten und der Clients während der Breminale'
       }
     ],
     // Array of data provider are supported
     'dataPath': ['/data/'],
-    'siteName': 'Freifunk Bremen - Local',
+    'siteName': 'Freifunk Breminale',
     'maxAge': 7,
     'mapLayers': [
       {
@@ -119,13 +119,13 @@ module.exports = function () {
     'fixedCenter': [
     // Northwest
       [
-        53.27917,
-        8.31390
+        53.0734,
+        8.8110
       ],
       // Southeast
       [
-        52.9734,
-        9.2037
+        53.0683,
+        8.8222
       ]
     ],
     'domainNames': [
