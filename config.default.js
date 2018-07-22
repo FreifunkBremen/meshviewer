@@ -22,12 +22,10 @@ module.exports = function () {
         'name': 'node.coordinates',
         'value': 'GeoURI'
       },
-      /*
       {
         'name': 'node.contact',
-        'value': 'owner'
+        'value': 'Group'
       },
-      */
       {
         'name': 'node.hardware',
         'value': 'model'
@@ -51,6 +49,14 @@ module.exports = function () {
       {
         'name': 'node.firstSeen',
         'value': 'FirstSeen'
+      },
+      {
+        'name': 'node.systemLoad',
+        'value': 'Load'
+      },
+      {
+        'name': 'node.ram',
+        'value': 'RAM'
       },
       {
         'name': 'node.ipAddresses',
