@@ -130,8 +130,24 @@ module.exports = function () {
     ],
     'domainNames': [
       {
+        'domain': '',
+        'name': 'Unknown (servers?)'
+      },
+      {
         'domain': 'ffhb',
         'name': 'Freifunk Bremen'
+      },
+      {
+        'domain': 'ffhb_batv15',
+        'name': 'Freifunk Bremen neu (B.A.T.M.A.N V / v15)'
+      },
+      {
+        'domain': 'ffhb_11s',
+        'name': 'Freifunk Bremen (11s)'
+      },
+      {
+        'domain': 'ffhb_legacy',
+        'name': 'Freifunk Bremen alt (ibss)'
       }
     ],
     'linkList': [
