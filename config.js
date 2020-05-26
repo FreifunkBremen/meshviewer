@@ -2,6 +2,7 @@ module.exports = function () {
   return {
     // Variables are NODE_ID and NODE_NAME (only a-z0-9\- other chars are replaced with _)
     'nodeInfos': [
+/*
       {
         'name': 'Clientstatistik',
         'href': 'https://grafana.bremen.freifunk.net/d/000000002/node?var-node={NODE_ID}',
@@ -26,6 +27,7 @@ module.exports = function () {
         'image': 'https://grafana.bremen.freifunk.net/render/d-solo/000000002/node?orgId=1&panelId=5&var-node={NODE_ID}&from=now-86399s&width=650&height=350&theme=light',
         'title': 'Auslastung des WLAN-Frequenz innerhalb des letzten Tages'
       },
+*/
       {
         'name': 'erweiterte Statistiken',
         'href': 'https://grafana.bremen.freifunk.net/d/000000002/node?var-node={NODE_ID}',
@@ -34,12 +36,13 @@ module.exports = function () {
       }
     ],
     'linkInfos': [
-      {
+/*      {
         'name': 'Verlauf min. und max. Übertragungsqualität aller Links',
         'href': 'https://grafana.bremen.freifunk.net/d/nvSNqoHmz/link?var-node={SOURCE_ID}&var-nodetolink={TARGET_ID}',
         'image': 'https://grafana.bremen.freifunk.net/render/d-solo/nvSNqoHmz/link?orgId=1&panelId=7&var-node={SOURCE_ID}&var-nodetolink={TARGET_ID}&from=now-86399s&width=650&height=350&theme=light',
         'title': 'Linkstatistik des letzten Tages, min und max aller Links zwischen diesen Knoten'
       },
+*/
       {
         'name': 'erweiterte Statistiken',
         'href': 'https://grafana.bremen.freifunk.net/d/nvSNqoHmz/link?var-node={SOURCE_ID}&var-nodetolink={TARGET_ID}',
@@ -48,14 +51,17 @@ module.exports = function () {
       },
     ],
     'linkTypeInfos': [
+/*
       {
         'name': 'Verlauf der Übertragungsqualität für {TYPE}',
         'href': 'https://grafana.bremen.freifunk.net/d/nvSNqoHmz/link?var-node={SOURCE_ID}&var-nodetolink={TARGET_ID}&var-source_addr={SOURCE_ADDR}&var-target_addr={TARGET_ADDR}',
         'image': 'https://grafana.bremen.freifunk.net/render/d-solo/nvSNqoHmz/link?orgId=1&panelId=8&var-node={SOURCE_ID}&var-nodetolink={TARGET_ID}&var-source_addr={SOURCE_ADDR}&var-target_addr={TARGET_ADDR}&from=now-86399s&width=650&height=350&theme=light',
         'title': 'Linkstatistik des letzten Tages des einzelnen Links in beide Richtungen'
       }
+*/
     ],
     'globalInfos': [
+/*
       {
         'name': 'Globale Statistik',
         'href': 'https://regensburg.freifunk.net/netz/statistik',
@@ -64,6 +70,7 @@ module.exports = function () {
         'width': 650,
         'height': 350
       }
+*/
     ],
     // Array of data provider are supported
     'dataPath': ['https://downloads.bremen.freifunk.net/data/'],
