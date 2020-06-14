@@ -79,8 +79,9 @@ module.exports = function () {
     'mapLayers': [
       {
         'name': 'Freifunk Bremen',
-        'url': '//tiles.bremen.freifunk.net/{z}/{x}/{y}{retina}.png',
+        'url': '//tiles.bremen.freifunk.net/{z}/{x}/{y}{r}.png',
         'config': {
+          // 'start': 6,
           'maxZoom': 20,
           'type': 'osm',
           'attribution': '<a href="https://github.com/openmaptiles/mapbox-studio-osm-bright.tm2">Design</a> © <a href="https://openmaptiles.org/">OpenMapTiles</a>, <a href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a> — Daten © <a href="https://www.maptiler.com/copyright/">MapTiler</a> © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -92,18 +93,18 @@ module.exports = function () {
         'config': {
           'maxZoom': 20,
           'subdomains': '1234',
-          'attribution': '<a href="http://www.openmaptiles.org/" target="_blank">&copy; OpenMapTiles</a> <a href="http://www.openstreetmap.org/about/" target="_blank">&copy; OpenStreetMap contributors</a>'
+          'attribution': '<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use" rel="noopener" target="_blank">Wikimedia maps</a><a href="http://www.openmaptiles.org/" target="_blank">&copy; OpenMapTiles</a> <a href="http://www.openstreetmap.org/about/" target="_blank" rel="noopener">&copy; OpenStreetMap contributors</a>',
         }
       },
       {
-        'name': 'Freifunk Regensburg Night',
+        'name': 'Freifunk Regensburgp (fast)',
         // Please ask Freifunk Regensburg before using its tile server - example with retina and dark tiles
-        'url': 'https://{s}.tiles.ffrgb.net/n/{z}/{x}/{y}{retina}.png',
+        'url': 'https://regensburg.freifunk.net/d/{z}/{x}/{y}{r}.{format}',
         'config': {
+          // 'mode': 'night',
           'maxZoom': 20,
-          'subdomains': '1234',
-          'attribution': ' <a href="http://www.openmaptiles.org/" target="_blank">&copy; OpenMapTiles</a> <a href="http://www.openstreetmap.org/about/" target="_blank">&copy; OpenStreetMap contributors</a>',
-          'mode': 'night'
+          'subdomains': '1',
+          'attribution': '<a href="http://www.openmaptiles.org/" target="_blank">&copy; OpenMapTiles</a> <a href="http://www.openstreetmap.org/about/" target="_blank">&copy; OpenStreetMap contributors</a>'
         }
       },
       {
