@@ -144,19 +144,23 @@ module.exports = function () {
       },
       {
         'domain': 'ffhb',
-        'name': 'Freifunk Bremen'
-      },
-      {
-        'domain': 'ffhb_batv15',
-        'name': 'Freifunk Bremen neu (B.A.T.M.A.N V / v15)'
-      },
-      {
-        'domain': 'ffhb_11s',
-        'name': 'Freifunk Bremen (11s)'
+        'name': 'Freifunk Bremen uralt (ibss - B.A.T.M.A.N. IV LEGACY / v14)'
       },
       {
         'domain': 'ffhb_legacy',
-        'name': 'Freifunk Bremen alt (ibss)'
+        'name': 'Freifunk Bremen alt (ibss - B.A.T.M.A.N. IV LEGACY / v14)'
+      },
+      {
+        'domain': 'ffhb_11s',
+        'name': 'Freifunk Bremen (11s - B.A.T.M.A.N. IV LEGACY / v14)'
+      },
+      {
+        'domain': 'ffhb_batv15',
+        'name': 'Freifunk Bremen neu (B.A.T.M.A.N. IV / v15)'
+      },
+      {
+        'domain': 'ffhb_batv15exp',
+        'name': 'Freifunk Bremen experimental (B.A.T.M.A.N. V / v15 experimental)'
       }
     ],
     'linkList': [
