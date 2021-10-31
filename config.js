@@ -84,7 +84,7 @@ module.exports = function () {
           // 'start': 6,
           'maxZoom': 20,
           'type': 'osm',
-          'attribution': '<a href="https://github.com/openmaptiles/mapbox-studio-osm-bright.tm2">Design</a> © <a href="https://openmaptiles.org/">OpenMapTiles</a>, <a href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a> — Daten © <a href="https://www.maptiler.com/copyright/">MapTiler</a> © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+          'attribution': '<a href="https://github.com/FreifunkBremen/mapbox-studio-osm-bright.tm2">Design</a> © <a href="https://openmaptiles.org/">OpenMapTiles</a>, <a href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a> — Daten © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }
       },
       {
