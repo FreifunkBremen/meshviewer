@@ -24,7 +24,7 @@ module.exports = function () {
       },
       {
         'name': 'node.contact',
-        'value': 'Group'
+        'value': 'owner'
       },
       {
         'name': 'node.hardware',

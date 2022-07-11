@@ -72,8 +72,26 @@ module.exports = function () {
     ],
     // Array of data provider are supported
     'dataPath': ['/map/'],
-    'siteName': 'Freifunk Bremen',
+    'siteName': 'Freifunk goes Breminale',
     'maxAge': 7,
+    'geo': [{
+      'json': function() {
+        return require('helper').getJSON('/map/breminale.geojson')
+      },
+      'option': {
+        'pointToLayer': function (feature, latlng) {
+          return L.circleMarker(latlng, {
+            radius: 8,
+            fillColor: feature.properties['marker-color'] ? feature.properties['marker-color']: feature.color,
+            color: '#ffa500',
+            weight: 1,
+            opacity: 1,
+            fillOpacity: 0.8
+          }).bindTooltip(feature.properties.name ? feature.properties.name.toString() : '');
+        },
+        pane: 'markerPane'
+      }
+    }],
     'mapLayers': [
       {
         'name': 'Freifunk Bremen',
@@ -126,13 +144,13 @@ module.exports = function () {
     'fixedCenter': [
     // Northwest
       [
-        53.27917,
-        8.31390
+        53.071301080036505,
+        8.811399936676025
       ],
       // Southeast
       [
-        52.9734,
-        9.2037
+        53.06696907836964,
+        8.82150650024414
       ]
     ],
     'domainNames': [
