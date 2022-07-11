@@ -144,7 +144,7 @@ module.exports = function () {
       },
       {
         'domain': 'ffhb',
-        'name': 'Freifunk Bremen ururalt (ibss - B.A.T.M.A.N. IV LEGACY / v14)'
+        'name': 'Freifunk goes Breminale (oder uralte Firmware ohne Domain)'
       },
       {
         'domain': 'ffhb_legacy',
