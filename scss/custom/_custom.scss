@@ -55,7 +55,6 @@ button {
   a {
     @extend %button;
   }
-
 }
 
 .leaflet-control-layers {
@@ -105,7 +104,6 @@ header {
   color: $color-white;
 
   h2 {
-
     &::after {
       height: 0;
       margin: 0;
