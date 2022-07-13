@@ -87,9 +87,13 @@ module.exports = function () {
             weight: 1,
             opacity: 1,
             fillOpacity: 0.8
-          }).bindTooltip(feature.properties.name ? feature.properties.name.toString() : '');
+          })
+          // .bindTooltip(feature.properties.name ? feature.properties.name.toString() : '');
         },
-        pane: 'markerPane'
+        pane: 'markerPane',
+        onEachFeature: function (feature, layer) {
+          layer.bindTooltip(feature.properties.name ? feature.properties.name.toString() : '')
+        },
       }
     }],
     'mapLayers': [
