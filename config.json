@@ -1,0 +1,102 @@
+{
+    "dataPath": ["https://downloads.bremen.freifunk.net/data/"],
+    "siteName": "Freifunk Bremen",
+    "maxAge": 7,
+    "fixedCenter": [
+      [53.27917, 8.31390],
+      [52.9734, 9.2037]
+    ],
+    "domainNames": [
+      { "domain": "", "name": "Unknown (servers?)" },
+      { "domain": "ffhb", "name": "Freifunk goes Breminale (oder uralte Firmware ohne Domain)" },
+      { "domain": "ffhb_legacy", "name": "Freifunk Bremen uralt (ibss - B.A.T.M.A.N. IV LEGACY / v14)" },
+      { "domain": "ffhb_11s", "name": "Freifunk Bremen alt (11s - B.A.T.M.A.N. IV LEGACY / v14)" },
+      { "domain": "ffhb_batv15", "name": "Freifunk Bremen (B.A.T.M.A.N. IV / v15)" },
+      { "domain": "ffhb_batv15exp", "name": "Freifunk Bremen experimental (B.A.T.M.A.N. V / v15 experimental)" }
+    ],
+    "linkList": [
+      { "title": "Homepage", "href": "https://bremen.freifunk.net/" },
+      { "title": "Blog", "href": "https://bremen.freifunk.net/blog/" },
+      { "title": "Grafana/Statistik", "href": "https://grafana.bremen.freifunk.net/" },
+      { "title": "Impressum", "href": "https://bremen.freifunk.net/impressum.html" },
+      { "title": "Datenschutz", "href": "https://wiki.bremen.freifunk.net/Infrastruktur/Datenschutz" }
+    ],
+    "nodeInfos": [
+      {
+        "name": "erweiterte Statistiken",
+        "href": "https://grafana.bremen.freifunk.net/d/000000002/node?var-node={NODE_ID}",
+        "image": "grafana-logo.png",
+        "title": "erweiterte Statistiken"
+      }
+    ],
+    "linkInfos": [
+      {
+        "name": "erweiterte Statistiken",
+        "href": "https://grafana.bremen.freifunk.net/d/nvSNqoHmz/link?var-node={SOURCE_ID}&var-nodetolink={TARGET_ID}",
+        "image": "grafana-logo.png",
+        "title": "erweiterte Statistiken"
+      }
+    ],
+    "linkTypeInfos": [
+    ],
+    "globalInfos": [
+    ],
+    "devicePictures": "https://downloads.bremen.freifunk.net/device-pictures/pictures-svg/{MODEL_NORMALIZED}.svg",
+    "devicePicturesSource": "<a href='https://github.com/freifunk/device-pictures'>https://github.com/freifunk/device-pictures</a>",
+    "devicePicturesLicense": "CC-BY-NC-SA 4.0",
+    "node_custom": "/[^a-z0-9\\-\\.]/ig",
+    "deprecation_enabled": true,
+    "deprecation_text": "Warnung: Dieser Knoten ist veraltet, und wird demnächst nicht mehr unterstützt. Mehr Infos unter <a href=\"https://bremen.freifunk.net/blog/2023/09/09/release-2021.html\" target=\"_blank\">Firmware 2021 - letzte mit 4MB Flash und 32MB RAM support</a>.<br/>Wenn du der Eigentümer des Gerätes bist, bitten wir dich, das Gerät zu ersetzen, um weiterhin am Netz teilnehmen zu können.",
+    "mapLayers": [
+      {
+        "name": "Freifunk Bremen",
+        "url": "//tiles.bremen.freifunk.net/{z}/{x}/{y}{r}.png",
+        "config": {
+          "--start": 6,
+          "maxZoom": 20,
+          "type": "osm",
+          "attribution": "<a href=\"https://github.com/FreifunkBremen/mapbox-studio-osm-bright.tm2\">Design</a> © <a href=\"https://openmaptiles.org/\">OpenMapTiles</a>, <a href=\"http://creativecommons.org/licenses/by/4.0/\">CC-BY 4.0</a> — Daten © <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a>"
+        }
+      },
+      {
+        "name": "OpenStreetMap (Dark)",
+        "url": "https://cartodb-basemaps-b.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+        "config": {
+          "mode": "night",
+          "type": "osm",
+          "maxZoom": 19,
+          "attribution": "Map tiles by Carto, under CC BY 3.0. Data by OpenStreetMap, under ODbL."
+        }
+      },
+      {
+        "name": "OpenStreetMap.HOT",
+        "url": "https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png",
+        "config": {
+          "maxZoom": 19,
+          "attribution": "&copy; Openstreetmap France | &copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>"
+        }
+      },
+      {
+        "name": "BaseMap.de (Farbe)",
+        "url": "https://sgx.geodatenzentrum.de/wmts_basemapde/tile/1.0.0/de_basemapde_web_raster_farbe/default/GLOBAL_WEBMERCATOR/{z}/{y}/{x}.png",
+        "config": {
+          "attribution": "&copy; 2024 basemap.de / BKG | Datenquellen: &copy; GeoBasis-DE | <a href=\"https://maplibre.org/\" target=\"_blank\">MapLibre</a> | Außerhalb Deutschlands: ©  <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap  contributors</a>, <a href=\"https://sg.geodatenzentrum.de/web_public/gdz/datenquellen/Datenquellen_TopPlusOpen.pdf\" target=\"_blank\">TopPlusOpen</a>"
+        }
+      },
+      {
+        "name": "BaseMap.de (Grau)",
+        "url": "https://sgx.geodatenzentrum.de/wmts_basemapde/tile/1.0.0/de_basemapde_web_raster_grau/default/GLOBAL_WEBMERCATOR/{z}/{y}/{x}.png",
+        "config": {
+          "attribution": "&copy; 2024 basemap.de / BKG | Datenquellen: &copy; GeoBasis-DE | <a href=\"https://maplibre.org/\" target=\"_blank\">MapLibre</a> | Außerhalb Deutschlands: ©  <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap  contributors</a>, <a href=\"https://sg.geodatenzentrum.de/web_public/gdz/datenquellen/Datenquellen_TopPlusOpen.pdf\" target=\"_blank\">TopPlusOpen</a>"
+        }
+      },
+      {
+        "name": "Esri.WorldImagery",
+        "url": "//server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+        "config": {
+          "maxZoom": 20,
+          "attribution": "Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
+        }
+      }
+    ]
+}
