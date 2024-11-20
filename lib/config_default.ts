@@ -212,6 +212,10 @@ export const config: Config = {
       value: "model",
     },
     {
+      name: "node.id",
+      value: "node_id",
+    },
+    {
       name: "node.primaryMac",
       value: "mac",
     },
