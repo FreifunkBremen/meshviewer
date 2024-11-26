@@ -49,6 +49,39 @@
     "deprecation_text": "Warnung: Dieser Knoten ist veraltet, und wird demnächst nicht mehr unterstützt. Mehr Infos unter <a href=\"https://bremen.freifunk.net/blog/2023/09/09/release-2021.html\" target=\"_blank\">Firmware 2021 - letzte mit 4MB Flash und 32MB RAM support</a>.<br/>Wenn du der Eigentümer des Gerätes bist, bitten wir dich, das Gerät zu ersetzen, um weiterhin am Netz teilnehmen zu können.",
     "mapLayers": [
       {
+        "name": "VersaTiles (Vector)",
+        "type": "vector",
+        "url": "https://tiles.versatiles.org/assets/styles/colorful.de.json",
+        "config": {
+          "attribution": "&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors"
+        }
+      },
+      {
+        "name": "Voyager CartoCDN (Vector)",
+        "type": "vector",
+        "url": "https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json",
+        "config": {
+          "attribution": "&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors, &copy; <a href=\"https://carto.com/about-carto/\">rastertiles/voyager</a>"
+        }
+      },
+      {
+        "name": "BaseMap.de (Vector)",
+        "type": "vector",
+        "url": "https://sgx.geodatenzentrum.de/gdz_basemapde_vektor/styles/bm_web_col.json",
+        "config": {
+          "attribution": "&copy; 2024 basemap.de / BKG | Datenquellen: &copy; GeoBasis-DE | <a href=\"https://maplibre.org/\" target=\"_blank\">MapLibre</a> | Außerhalb Deutschlands: ©  <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap  contributors</a>, <a href=\"https://sg.geodatenzentrum.de/web_public/gdz/datenquellen/Datenquellen_TopPlusOpen.pdf\" target=\"_blank\">TopPlusOpen</a>"
+        }
+      },
+      {
+        "name": "BaseMap.de (Vector-Black)",
+        "type": "vector",
+        "url": "https://basemap.de/data/produkte/web_vektor/styles/bm_web_drk.json",
+        "config": {
+          "mode": "night",
+          "attribution": "&copy; 2024 basemap.de / BKG | Datenquellen: &copy; GeoBasis-DE | <a href=\"https://maplibre.org/\" target=\"_blank\">MapLibre</a> | Außerhalb Deutschlands: ©  <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap  contributors</a>, <a href=\"https://sg.geodatenzentrum.de/web_public/gdz/datenquellen/Datenquellen_TopPlusOpen.pdf\" target=\"_blank\">TopPlusOpen</a>"
+        }
+      },
+      {
         "name": "Freifunk Bremen",
         "url": "//tiles.bremen.freifunk.net/{z}/{x}/{y}{r}.png",
         "config": {
