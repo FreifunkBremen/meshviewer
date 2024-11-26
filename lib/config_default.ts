@@ -1,6 +1,7 @@
 import { LanguageCode } from "./utils/language";
 import { Node, NodeId } from "./utils/node";
 import { GeoJSONOptions, GridLayerOptions, LatLngBoundsExpression } from "leaflet";
+import { MapOptions } from "maplibre-gl/src/ui/map";
 import { GeoJsonObject } from "geojson";
 
 interface NodeAttr {
@@ -62,7 +63,7 @@ export interface MapLayer {
   name: string;
   url: string;
   type?: string;
-  config: GridLayerOptions & {
+  config: MapOptions & GridLayerOptions & {
     start?: number; // Hour
     end?: number; // Hour
     order: number;
